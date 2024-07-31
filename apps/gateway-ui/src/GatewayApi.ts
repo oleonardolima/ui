@@ -122,6 +122,7 @@ export class GatewayApi {
     try {
       const res: Response = await this.post('connect-fed', {
         invite_code: inviteCode,
+        use_tor: true,
       });
 
       if (res.ok) {
